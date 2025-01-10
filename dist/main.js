@@ -1791,8 +1791,8 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _Views_YogaDiscountOffer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Views/YogaDiscountOffer.js */ "./src/Views/YogaDiscountOffer.js");
 /* harmony import */ var _Views_BlogSubscription_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Views/BlogSubscription.js */ "./src/Views/BlogSubscription.js");
 /* harmony import */ var _Views_YouTube_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Views/YouTube.js */ "./src/Views/YouTube.js");
@@ -1802,21 +1802,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_0__.createRoot)(window.bodyTag);
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
+const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(window.bodyTag);
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
   alt: "banner",
   width: "100%",
   className: "rounded",
   src: "src\\assets\\images\\dockwithtext.png"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_Views_YogaDiscountOffer_js__WEBPACK_IMPORTED_MODULE_2__.YogaDiscountOffer, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h3", {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_YogaDiscountOffer_js__WEBPACK_IMPORTED_MODULE_2__.YogaDiscountOffer, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
   className: "mb-4"
-}, "Private Yoga Session with Alex"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+}, "Private Yoga Session with Alex"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   className: "container"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   className: "col col-md-2"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
   alt: "alex",
   style: {
     height: "80%",
@@ -1825,69 +1825,69 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_
   className: "rounded mb-5 align-content-center",
   title: "Alex at Baton Rouge Holi Fest in 2024",
   src: "src\\assets\\images\\alex.png"
-})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   className: "col col col-md-6"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h5", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h5", {
   id: "privateDetails",
   className: "mb-3"
-}, "Private sessions optimize the benefits of yoga."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", {
+}, "Private sessions optimize the benefits of yoga."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
   className: "mb-4"
-}, "Private sessions allow yogis to give individuals more time than in group classes, so we can provide deeper instruction, customized practices to fit your goals and needs, additional variations for poses, and new ways to use props. Or we can guide you through mediation or savasna for the whole session if that's what your body needs that day. Meet yourself where you are!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h6", {
+}, "Private sessions allow yogis to give individuals more time than in group classes, so we can provide deeper instruction, customized practices to fit your goals and needs, additional variations for poses, and new ways to use props. Or we can guide you through mediation or savasna for the whole session if that's what your body needs that day. Meet yourself where you are!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h6", {
   className: "mb-4"
-}, "Sessions last 30, 45, or 60 minutes.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+}, "Sessions last 30, 45, or 60 minutes.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   className: "col col col-md-4 justify-content-start"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_Views_BlogSubscription_js__WEBPACK_IMPORTED_MODULE_3__.BlogSubscription, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h5", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_BlogSubscription_js__WEBPACK_IMPORTED_MODULE_3__.BlogSubscription, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h5", {
   className: "mb-4"
-}, "Book a private yoga session, tailored to your specific needs, today!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h3", {
+}, "Book a private yoga session, tailored to your specific needs, today!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
   className: "mb-4 p-3"
-}, "Yoga is for everyone."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "Yoga benefits people of all ages, bodies, and experiences; ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("b", null, "no"), " ", "prior experience is required. And, contrary to popular belief, you don't have to be an acrobat or rubber band to do yoga, either."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "That's because one of the benefits of yoga is improved flexibility."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", {
+}, "Yoga is for everyone."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Yoga benefits people of all ages, bodies, and experiences; ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "no"), " ", "prior experience is required. And, contrary to popular belief, you don't have to be an acrobat or rubber band to do yoga, either."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "That's because one of the benefits of yoga is improved flexibility."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
   className: "mb-4"
-}, "A regular yoga practice offers other mental and physical health benefits. Watch the video or click on any of the", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+}, "A regular yoga practice offers other mental and physical health benefits. Watch the video or click on any of the", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
   href: "#benefits"
-}, "benefits"), " below to read more."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_Views_YouTube_js__WEBPACK_IMPORTED_MODULE_4__.YouTube, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h5", {
+}, "benefits"), " below to read more."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_YouTube_js__WEBPACK_IMPORTED_MODULE_4__.YouTube, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h5", {
   id: "benefits"
-}, "What are the benefits of yoga? Here are a few."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", {
+}, "What are the benefits of yoga? Here are a few."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
   className: "mb-5"
-}, "A regular yoga practice offers mental and physical health benefits."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+}, "A regular yoga practice offers mental and physical health benefits."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   className: "container-fluid"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   className: "col-md-3"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
   className: "list-group m-3"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
   className: "list-group-item"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
   href: "#benefit1"
-}, "back pain relief")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+}, "back pain relief")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
   className: "list-group-item"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
   href: "#benefit2"
-}, "better balance")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+}, "better balance")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
   className: "list-group-item"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
   href: "#benefit3"
-}, "greater strength")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+}, "greater strength")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
   className: "list-group-item"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
   href: "#benefit4"
-}, "less stress")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+}, "less stress")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
   className: "list-group-item"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
   href: "#benefit5"
-}, "more energy and focus")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+}, "more energy and focus")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
   className: "list mb-5"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
   href: "#benefit6"
-}, "relaxation")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+}, "relaxation")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   className: "col-md-9 justify-content-end mb-5"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
   alt: "benefitsOfYoga",
   width: "75%",
   className: "rounded",
   src: "src\\assets\\images\\benefits_of_yoga.png"
-}))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("hr", null), "Copyright 2025", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
+}))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), "Copyright 2025", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
   alt: "copyright",
   style: {
     height: "15px",

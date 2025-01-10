@@ -1,5 +1,5 @@
-import { createRoot } from "react-dom/client";
 import React from "react";
+import { createRoot} from "react-dom/client";
 // import { handleClick } from "../src/controllers/handleClick.js";
 import { YogaDiscountOffer } from "./Views/YogaDiscountOffer.js";
 import { BlogSubscription } from "./Views/BlogSubscription.js";
