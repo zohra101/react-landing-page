@@ -92,7 +92,7 @@ root.render(
 							<li className="list-group-item">
 								<a href="#benefit5">more energy and focus</a>
 							</li>
-							<li className="list mb-5">
+							<li className="list-group-item mb-5">
 								<a href="#benefit6">relaxation</a>
 							</li>
 						</ul>
