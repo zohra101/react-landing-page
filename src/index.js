@@ -15,7 +15,7 @@ root.render(
 				alt="banner"
 				width="100%"
 				className="rounded"
-				src="assets\images\dockwithtext.png"
+				src="src\assets\images\dockwithtext.png"
 			/>
 			<hr />
 		</header>
@@ -30,7 +30,7 @@ root.render(
 						style={{ height: "80%", width: "100%" }}
 						className="rounded mb-5 align-content-center"
 						title="Alex at Baton Rouge Holi Fest in 2024"
-						src="assets/images/alex.png"
+						src="src\assets\images\alex.png"
 					/>
 				</div>
 				<div className="col col col-md-6">
@@ -102,7 +102,7 @@ root.render(
 							alt="benefitsOfYoga"
 							width="75%"
 							className="rounded"
-							src="assets\images\benefits_of_yoga.png"
+							src="src\assets\images\benefits_of_yoga.png"
 						/>
 					</div>
 				</div>
@@ -114,7 +114,7 @@ root.render(
 			<img
 				alt="copyright"
 				style={{ height: "15px", width: "15px%" }}
-				src="assets\icons\copyright_cGainsboro_nobg.png"
+				src="src\assets\icons\copyright_cGainsboro_nobg.png"
 			/>
 			5Elements Movement Arts
 		</footer>

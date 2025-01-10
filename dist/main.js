@@ -1807,7 +1807,7 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_
   alt: "banner",
   width: "100%",
   className: "rounded",
-  src: "assets\\images\\dockwithtext.png"
+  src: "src\\assets\\images\\dockwithtext.png"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_Views_YogaDiscountOffer_js__WEBPACK_IMPORTED_MODULE_2__.YogaDiscountOffer, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h3", {
   className: "mb-4"
 }, "Private Yoga Session with Alex"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
@@ -1824,7 +1824,7 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_
   },
   className: "rounded mb-5 align-content-center",
   title: "Alex at Baton Rouge Holi Fest in 2024",
-  src: "assets/images/alex.png"
+  src: "src\\assets\\images\\alex.png"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
   className: "col col col-md-6"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h5", {
@@ -1876,14 +1876,14 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_
   alt: "benefitsOfYoga",
   width: "75%",
   className: "rounded",
-  src: "assets\\images\\benefits_of_yoga.png"
+  src: "src\\assets\\images\\benefits_of_yoga.png"
 }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("hr", null), "Copyright 2025", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
   alt: "copyright",
   style: {
     height: "15px",
     width: "15px%"
   },
-  src: "assets\\icons\\copyright_cGainsboro_nobg.png"
+  src: "src\\assets\\icons\\copyright_cGainsboro_nobg.png"
 }), "5Elements Movement Arts")));
 })();
 
