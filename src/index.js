@@ -76,23 +76,23 @@ root.render(
 			<div className="container-fluid">
 				<div className="row">
 					<div className="col-md-3">
-						<ul className="m-3">
-							<li>
+						<ul className="list-group m-3">
+							<li className="list-group-item">
 								<a href="#benefit1">back pain relief</a>
 							</li>
-							<li>
+							<li className="list-group-item">
 								<a href="#benefit2">better balance</a>
 							</li>
-							<li>
+							<li className="list-group-item">
 								<a href="#benefit3">greater strength</a>
 							</li>
-							<li>
+							<li className="list-group-item">
 								<a href="#benefit4">less stress</a>
 							</li>
-							<li>
+							<li className="list-group-item">
 								<a href="#benefit5">more energy and focus</a>
 							</li>
-							<li className="mb-5">
+							<li className="list mb-5">
 								<a href="#benefit6">relaxation</a>
 							</li>
 						</ul>

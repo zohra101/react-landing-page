@@ -1610,7 +1610,7 @@ function BlogSubscription() {
     type: "submit",
     className: "btn btn-success"
   }, "Subscribe Now"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "spinner"
+    id: "outputTag"
   }));
 }
 
@@ -1855,19 +1855,29 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
   className: "col-md-3"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
-  className: "m-3"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+  className: "list-group m-3"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+  className: "list-group-item"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
   href: "#benefit1"
-}, "back pain relief")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+}, "back pain relief")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+  className: "list-group-item"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
   href: "#benefit2"
-}, "better balance")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+}, "better balance")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+  className: "list-group-item"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
   href: "#benefit3"
-}, "greater strength")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+}, "greater strength")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+  className: "list-group-item"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
   href: "#benefit4"
-}, "less stress")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
+}, "less stress")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+  className: "list-group-item"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
   href: "#benefit5"
 }, "more energy and focus")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
-  className: "mb-5"
+  className: "list mb-5"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
   href: "#benefit6"
 }, "relaxation")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {

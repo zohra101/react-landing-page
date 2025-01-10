@@ -1,4 +1,4 @@
-import React, { useState }from "react";
+import React from "react";
 import { handleSubmit } from "../controllers/handleSubmit.js";
 
 export function BlogSubscription() {
@@ -31,7 +31,7 @@ export function BlogSubscription() {
 					</form>
 				</div>
 			</div>
-			<div id="spinner"></div>
+			<div id="outputTag"></div>
 		</>
 	);
 }
