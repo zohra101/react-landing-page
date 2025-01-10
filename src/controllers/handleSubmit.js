@@ -9,11 +9,10 @@ export function handleSubmit (event = new Event(submit)) {
     const emailInput = inputs[1];
     const email = emailInput.value;
 
-    window.spinner.innerHTML = "<div class='spinner-border text-primary'></div>";
+    window.outputTag.innerHTML = "<div class='spinner-border text-primary'></div>";
     output("<br>" + "<h5>Submitting for " + email + "...</h5><br>");
 
-    function clearSpinner() {
-        setTimeout(window.spinner.innerHTMLHTML="",500)
-    }
+    setTimeout(window.outputTag.innerHTMLHTML="",5000)
+    
    
 }

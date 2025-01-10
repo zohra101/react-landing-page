@@ -12,7 +12,11 @@ export function BlogSubscription() {
 							<label htmlFor="name" className="p-2">
 								Your Name{" "}
 							</label>
-							<input type="text" name="name" placeholder="First Last"></input>
+							<input
+								type="text"
+								required
+								name="name"
+								placeholder="First Last"></input>
 						</div>
 						<div className="p-2">
 							<label htmlFor="email" className="p-2">
@@ -20,6 +24,7 @@ export function BlogSubscription() {
 							</label>
 							<input
 								type="email"
+								required
 								name="email"
 								placeholder="myemai@domain.com"></input>
 						</div>

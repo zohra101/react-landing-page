@@ -1593,6 +1593,7 @@ function BlogSubscription() {
     className: "p-2"
   }, "Your Name", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     type: "text",
+    required: true,
     name: "name",
     placeholder: "First Last"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -1602,6 +1603,7 @@ function BlogSubscription() {
     className: "p-2"
   }, "Your Email", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     type: "email",
+    required: true,
     name: "email",
     placeholder: "myemai@domain.com"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -1691,11 +1693,9 @@ function handleSubmit(event = new Event(submit)) {
   // const name = nameInput.value;
   const emailInput = inputs[1];
   const email = emailInput.value;
-  window.spinner.innerHTML = "<div class='spinner-border text-primary'></div>";
+  window.outputTag.innerHTML = "<div class='spinner-border text-primary'></div>";
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)("<br>" + "<h5>Submitting for " + email + "...</h5><br>");
-  function clearSpinner() {
-    setTimeout(window.spinner.innerHTMLHTML = "", 500);
-  }
+  setTimeout(window.outputTag.innerHTMLHTML = "", 5000);
 }
 
 /***/ }),
