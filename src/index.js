@@ -1,5 +1,5 @@
 import React from "react";
-import { createRoot} from "react-dom/client";
+import { createRoot } from "react-dom/client";
 // import { handleClick } from "../src/controllers/handleClick.js";
 import { YogaDiscountOffer } from "./Views/YogaDiscountOffer.js";
 import { BlogSubscription } from "./Views/BlogSubscription.js";
@@ -38,7 +38,7 @@ root.render(
 						Private sessions optimize the benefits of yoga.
 					</h5>
 					<p className="mb-4">
-						Private sessions allow yogis to give individuals more time than in 
+						Private sessions allow yogis to give individuals more time than in
 						group classes, so we can provide deeper instruction, customized
 						practices to fit your goals and needs, additional variations for
 						poses, and new ways to use props. Or we can guide you through
@@ -56,16 +56,14 @@ root.render(
 			</h5>
 			<h3 className="mb-4 p-3">Yoga is for everyone.</h3>
 			<p>
-				Yoga benefits people of all ages, bodies, and experiences; <b>no</b>{" "}
+				Yoga benefits people of all ages, bodies, and experiences; <b>no</b>
 				prior experience is required. And, contrary to popular belief, you don't
 				have to be an acrobat or rubber band to do yoga, either.
 			</p>
-			<p>
-				That's because one of the benefits of yoga is improved flexibility.
-			</p>
+			<p>That's because one of the benefits of yoga is improved flexibility.</p>
 			<p className="mb-4">
 				A regular yoga practice offers other mental and physical health
-				benefits. Watch the video or click on any of the{" "}
+				benefits. Watch the video or click on any of the
 				<a href="#benefits">benefits</a> below to read more.
 			</p>
 			<YouTube />
@@ -78,22 +76,34 @@ root.render(
 					<div className="col-md-3">
 						<ul className="list-group m-3">
 							<li className="list-group-item">
-								<a href="#benefit1">back pain relief</a>
+								<a href="#benefit1">
+									back pain relief
+								</a>
 							</li>
 							<li className="list-group-item">
-								<a href="#benefit2">better balance</a>
+								<a href="#benefit2">
+									better balance
+								</a>
 							</li>
 							<li className="list-group-item">
-								<a href="#benefit3">greater strength</a>
+								<a href="#benefit3">
+									greater strength
+								</a>
 							</li>
 							<li className="list-group-item">
-								<a href="#benefit4">less stress</a>
+								<a href="#benefit4">
+									less stress
+								</a>
 							</li>
 							<li className="list-group-item">
-								<a href="#benefit5">more energy and focus</a>
+								<a href="#benefit5">
+									more energy and focus
+								</a>
 							</li>
 							<li className="list-group-item mb-5">
-								<a href="#benefit6">relaxation</a>
+								<a href="#benefit6">
+									relaxation
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -110,10 +120,10 @@ root.render(
 		</main>
 		<footer>
 			<hr />
-			Copyright 2025{" "}
+			Copyright 2025
 			<img
 				alt="copyright"
-				style={{ height: "15px", width: "15px%" }}
+				style={{ height: "15px", width: "15px" }}
 				src="src\assets\icons\copyright_cGainsboro_nobg.png"
 			/>
 			5Elements Movement Arts

@@ -13,6 +13,7 @@ export function BlogSubscription() {
 								Your Name{" "}
 							</label>
 							<input
+								id="name"
 								type="text"
 								required
 								name="name"
@@ -23,6 +24,7 @@ export function BlogSubscription() {
 								Your Email{" "}
 							</label>
 							<input
+								id="email"
 								type="email"
 								required
 								name="email"
@@ -36,7 +38,8 @@ export function BlogSubscription() {
 					</form>
 				</div>
 			</div>
-			<div id="outputTag"></div>
+			<output id="spinnerTag"></output>
+			<output id="submittingTag"></output>
 		</>
 	);
 }

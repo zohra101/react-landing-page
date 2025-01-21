@@ -1592,6 +1592,7 @@ function BlogSubscription() {
     htmlFor: "name",
     className: "p-2"
   }, "Your Name", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    id: "name",
     type: "text",
     required: true,
     name: "name",
@@ -1602,6 +1603,7 @@ function BlogSubscription() {
     htmlFor: "email",
     className: "p-2"
   }, "Your Email", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    id: "email",
     type: "email",
     required: true,
     name: "email",
@@ -1611,8 +1613,10 @@ function BlogSubscription() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     type: "submit",
     className: "btn btn-success"
-  }, "Subscribe Now"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "outputTag"
+  }, "Subscribe Now"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("output", {
+    id: "spinnerTag"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("output", {
+    id: "submittingTag"
   }));
 }
 
@@ -1685,6 +1689,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   handleSubmit: () => (/* binding */ handleSubmit)
 /* harmony export */ });
 /* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+/* harmony import */ var _modules_resolveServerResponse_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/resolveServerResponse.js */ "./src/modules/resolveServerResponse.js");
+/* harmony import */ var _modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/parseResponse.js */ "./src/modules/parseResponse.js");
+
+
 
 function handleSubmit(event = new Event(submit)) {
   event.preventDefault();
@@ -1693,9 +1701,65 @@ function handleSubmit(event = new Event(submit)) {
   // const name = nameInput.value;
   const emailInput = inputs[1];
   const email = emailInput.value;
-  window.outputTag.innerHTML = "<div class='spinner-border text-primary'></div>";
-  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)("<br>" + "<h5>Submitting for " + email + "...</h5><br>");
-  setTimeout(window.outputTag.innerHTMLHTML = "", 5000);
+  window.spinnerTag.innerHTML = "<div class='spinner-border text-primary'></div>";
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(`<br><h5>Submitting for ${email}...</h5><br>`, "submittingTag");
+  debugger;
+  const promise = new Promise(_modules_resolveServerResponse_js__WEBPACK_IMPORTED_MODULE_1__.resolveServerResponse);
+  promise.then(_modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__.parseResponse);
+  promise.then(function hideSpinner(resolveValue) {
+    // setTimeout((window.spinnerTag.innerHTML = ""), 3000);
+    debugger;
+    return resolveValue;
+  });
+}
+
+/***/ }),
+
+/***/ "./src/modules/parseResponse.js":
+/*!**************************************!*\
+  !*** ./src/modules/parseResponse.js ***!
+  \**************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   parseResponse: () => (/* binding */ parseResponse)
+/* harmony export */ });
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+
+function parseResponse(resolveValue) {
+  console.log("Inside the parseResponse function");
+  debugger;
+  const response = JSON.parse(resolveValue);
+  const message = response.message;
+}
+
+/***/ }),
+
+/***/ "./src/modules/resolveServerResponse.js":
+/*!**********************************************!*\
+  !*** ./src/modules/resolveServerResponse.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   resolveServerResponse: () => (/* binding */ resolveServerResponse)
+/* harmony export */ });
+// import { React } from "react";
+// import { YogaDiscountCode } from "../Views/YogaDiscountCode.js";
+
+function resolveServerResponse(resolve) {
+  debugger;
+  console.log("Inside the resolveServerResponse function");
+  function activateResolve() {
+    debugger;
+    const response = {
+      message: "You're now subscribed to the 5Elements blog."
+    };
+    const finalResponse = JSON.stringify(response);
+    resolve(finalResponse);
+  }
 }
 
 /***/ }),
@@ -1711,7 +1775,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   output: () => (/* binding */ output)
 /* harmony export */ });
 function output(message = "", outputTag = "outputTag", shouldAppend = true) {
-  if (shouldAppend) window[outputTag].innerHTML;else window[outputTag].innerHTML = message;
+  if (shouldAppend) window[outputTag].innerHTML += message;else window[outputTag].innerHTML = message;
 }
 
 /***/ })
@@ -1840,9 +1904,9 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_
   className: "mb-4"
 }, "Book a private yoga session, tailored to your specific needs, today!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
   className: "mb-4 p-3"
-}, "Yoga is for everyone."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Yoga benefits people of all ages, bodies, and experiences; ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "no"), " ", "prior experience is required. And, contrary to popular belief, you don't have to be an acrobat or rubber band to do yoga, either."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "That's because one of the benefits of yoga is improved flexibility."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+}, "Yoga is for everyone."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Yoga benefits people of all ages, bodies, and experiences; ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "no"), "prior experience is required. And, contrary to popular belief, you don't have to be an acrobat or rubber band to do yoga, either."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "That's because one of the benefits of yoga is improved flexibility."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
   className: "mb-4"
-}, "A regular yoga practice offers other mental and physical health benefits. Watch the video or click on any of the", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+}, "A regular yoga practice offers other mental and physical health benefits. Watch the video or click on any of the", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
   href: "#benefits"
 }, "benefits"), " below to read more."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_YouTube_js__WEBPACK_IMPORTED_MODULE_4__.YouTube, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h5", {
   id: "benefits"
@@ -1887,11 +1951,11 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_
   width: "75%",
   className: "rounded",
   src: "src\\assets\\images\\benefits_of_yoga.png"
-}))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), "Copyright 2025", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+}))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), "Copyright 2025", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
   alt: "copyright",
   style: {
     height: "15px",
-    width: "15px%"
+    width: "15px"
   },
   src: "src\\assets\\icons\\copyright_cGainsboro_nobg.png"
 }), "5Elements Movement Arts")));
