@@ -15,7 +15,7 @@ root.render(
 				alt="banner"
 				width="100%"
 				className="rounded"
-				src="src\assets\images\dockwithtext.png"
+				src="../assets/images/dockwithtext.png"
 			/>
 			<hr />
 		</header>
@@ -30,11 +30,13 @@ root.render(
 						style={{ height: "80%", width: "100%" }}
 						className="rounded mb-5 align-content-center"
 						title="Alex at Baton Rouge Holi Fest in 2024"
-						src="src\assets\images\alex.png"
+						src="../assets/images/alex.png"
 					/>
 				</div>
 				<div className="col col col-md-6">
-					<h5 id="privateDetails" className="mb-3">
+					<h5
+						id="privateDetails"
+						className="mb-3">
 						Private sessions optimize the benefits of yoga.
 					</h5>
 					<p className="mb-4">
@@ -76,34 +78,22 @@ root.render(
 					<div className="col-md-3">
 						<ul className="list-group m-3">
 							<li className="list-group-item">
-								<a href="#benefit1">
-									back pain relief
-								</a>
+								<a href="#benefit1">back pain relief</a>
 							</li>
 							<li className="list-group-item">
-								<a href="#benefit2">
-									better balance
-								</a>
+								<a href="#benefit2">better balance</a>
 							</li>
 							<li className="list-group-item">
-								<a href="#benefit3">
-									greater strength
-								</a>
+								<a href="#benefit3">greater strength</a>
 							</li>
 							<li className="list-group-item">
-								<a href="#benefit4">
-									less stress
-								</a>
+								<a href="#benefit4">less stress</a>
 							</li>
 							<li className="list-group-item">
-								<a href="#benefit5">
-									more energy and focus
-								</a>
+								<a href="#benefit5">more energy and focus</a>
 							</li>
 							<li className="list-group-item mb-5">
-								<a href="#benefit6">
-									relaxation
-								</a>
+								<a href="#benefit6">relaxation</a>
 							</li>
 						</ul>
 					</div>
@@ -112,7 +102,7 @@ root.render(
 							alt="benefitsOfYoga"
 							width="75%"
 							className="rounded"
-							src="src\assets\images\benefits_of_yoga.png"
+							src="../assets/images/benefits_of_yoga.png"
 						/>
 					</div>
 				</div>
@@ -123,8 +113,9 @@ root.render(
 			Copyright 2025
 			<img
 				alt="copyright"
-				style={{ height: "15px", width: "15px" }}
-				src="src\assets\icons\copyright_cGainsboro_nobg.png"
+				className="ps-1 pe-1"
+				style={{ height: "15px", width: "25px" }}
+				src="../assets/icons/copyright_cGainsboro_nobg.png"
 			/>
 			5Elements Movement Arts
 		</footer>

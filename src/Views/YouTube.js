@@ -1,13 +1,21 @@
 import React from "react";
 
-export function YouTube() {
+export function YouTube(props) {
+	const src = props.src;
+	const label = props.label;
+	const captions = props.children;
+	const center = { width: "fit-content", justifySelf: "center" };
+	const depth = { borderRadius: "10px", boxShadow: "10px 10px grey" };
+
 	return (
 		<>
-			<h5 className="pb-4">
-				The Health Benefits of Yoga - How Yoga Helps You Stay Healthy | Sadhguru
-			</h5>
-			<div style={{width:"fit-content", justifySelf: "center" }}>
+			<div style={center}>
+				<h5 className="pb-4">
+					The Health Benefits of Yoga - How Yoga Helps You Stay Healthy |
+					Sadhguru
+				</h5>
 				<iframe
+					style={(depth)}
 					className="mb-5"
 					width="653"
 					height="367"

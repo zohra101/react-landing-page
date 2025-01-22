@@ -1662,15 +1662,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-function YouTube() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h5", {
+function YouTube(props) {
+  const src = props.src;
+  const label = props.label;
+  const captions = props.children;
+  const center = {
+    width: "fit-content",
+    justifySelf: "center"
+  };
+  const depth = {
+    borderRadius: "10px",
+    boxShadow: "10px 10px grey"
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    style: center
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h5", {
     className: "pb-4"
-  }, "The Health Benefits of Yoga - How Yoga Helps You Stay Healthy | Sadhguru"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    style: {
-      width: "fit-content",
-      justifySelf: "center"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", {
+  }, "The Health Benefits of Yoga - How Yoga Helps You Stay Healthy | Sadhguru"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", {
+    style: depth,
     className: "mb-5",
     width: "653",
     height: "367",
@@ -1709,15 +1718,18 @@ function handleSubmit(event = new Event(submit)) {
   const emailInput = inputs[1];
   const email = emailInput.value;
   window.spinnerTag.innerHTML = "<div class='spinner-border text-primary'></div>";
-  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(`<br><h5>Submitting for ${email}...</h5><br>`, "submittingTag");
-  debugger;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(`<br><h5>Submitting for ${email}...</h5><br>`, "submittingTag", true, false);
   const promise = new Promise(_modules_resolveServerResponse_js__WEBPACK_IMPORTED_MODULE_1__.resolveServerResponse);
   promise.then(_modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__.parseResponse);
   promise.then(function hideSpinner(resolveValue) {
-    // setTimeout((window.spinnerTag.innerHTML = ""), 3000);
+    console.log("Inside the hideSpinner function");
+    window.spinnerTag.innerHTML = "";
     debugger;
+    window.submittingTag.innerHTML = "";
+    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(resolveValue, "submittingTag", true, false);
     return resolveValue;
   });
+  return promise;
 }
 
 /***/ }),
@@ -1736,8 +1748,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function parseResponse(resolveValue) {
   console.log("Inside the parseResponse function");
-  debugger;
   const response = JSON.parse(resolveValue);
+  debugger;
   const message = response.message;
 }
 
@@ -1757,12 +1769,12 @@ __webpack_require__.r(__webpack_exports__);
 // import { YogaDiscountCode } from "../Views/YogaDiscountCode.js";
 
 function resolveServerResponse(resolve) {
-  debugger;
-  console.log("Inside the resolveServerResponse function");
+  console.log("Inside the parseResponse function");
+  setTimeout(activateResolve, 2000);
   function activateResolve() {
-    debugger;
+    console.log("Inside the activateResolve function");
     const response = {
-      message: "You're now subscribed to the 5Elements blog."
+      message: "You're now subscribed to the 5Elements blog. Your discount code, SAVE20YOGA, is valid for 20% off your next purchase."
     };
     const finalResponse = JSON.stringify(response);
     resolve(finalResponse);
@@ -1781,8 +1793,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   output: () => (/* binding */ output)
 /* harmony export */ });
-function output(message = "", outputTag = "outputTag", shouldAppend = true) {
-  if (shouldAppend) window[outputTag].innerHTML += message;else window[outputTag].innerHTML = message;
+function output(message = "", outputTag = "outputTag", isHTML = false, shouldAppend = true) {
+  debugger;
+  if (isHTML) {
+    if (shouldAppend) window[outputTag].innerHTML += message;else window[outputTag].innerHTML = message;
+  } else {
+    if (shouldAppend) window[outputTag].textContent += message;else window[outputTag].textContent = message;
+  }
 }
 
 /***/ })
@@ -1878,7 +1895,7 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_
   alt: "banner",
   width: "100%",
   className: "rounded",
-  src: "src\\assets\\images\\dockwithtext.png"
+  src: "../assets/images/dockwithtext.png"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_YogaDiscountOffer_js__WEBPACK_IMPORTED_MODULE_2__.YogaDiscountOffer, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
   className: "mb-4"
 }, "Private Yoga Session with Alex"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -1895,7 +1912,7 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_
   },
   className: "rounded mb-5 align-content-center",
   title: "Alex at Baton Rouge Holi Fest in 2024",
-  src: "src\\assets\\images\\alex.png"
+  src: "../assets/images/alex.png"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   className: "col col col-md-6"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h5", {
@@ -1957,14 +1974,15 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_
   alt: "benefitsOfYoga",
   width: "75%",
   className: "rounded",
-  src: "src\\assets\\images\\benefits_of_yoga.png"
+  src: "../assets/images/benefits_of_yoga.png"
 }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), "Copyright 2025", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
   alt: "copyright",
+  className: "ps-1 pe-1",
   style: {
     height: "15px",
-    width: "15px"
+    width: "25px"
   },
-  src: "src\\assets\\icons\\copyright_cGainsboro_nobg.png"
+  src: "../assets/icons/copyright_cGainsboro_nobg.png"
 }), "5Elements Movement Arts")));
 })();
 
